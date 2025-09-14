@@ -3,6 +3,7 @@ from datetime import datetime
 import uuid
 """Defines the BaseModel class."""
 
+
 class BaseModel:
     """Represents the BaseModel."""
     def __init__(self):
@@ -17,7 +18,7 @@ class BaseModel:
     def save(self):
         """Updates the updated_at attribute with the current datetime."""
         self.updated_at = datetime.now()
-        
+
     def to_dict(self):
         """Returns a dictionary containing all keys/values of the instance."""
         dict_copy = self.__dict__.copy()
